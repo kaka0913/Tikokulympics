@@ -1,8 +1,8 @@
-import GoogleSignIn
-import SwiftUI
 import Firebase
 import FirebaseCore
 import FirebaseMessaging
+import GoogleSignIn
+import SwiftUI
 import UserNotifications
 
 final class AppDelegate: NSObject, UIApplicationDelegate {
