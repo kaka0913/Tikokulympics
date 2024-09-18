@@ -28,11 +28,9 @@ struct TikokuRankingView: View {
                         .foregroundColor(.lightgray)
                         .cornerRadius(15)
                 }
-
             }
             .padding(.bottom)
             TextSegmentedControl()
-
             ScrollView {
                 RankingUserCard(rankState: .first)
                 RankingUserCard(rankState: .secound)
@@ -62,7 +60,7 @@ struct TextSegmentedControl: View {
                         index == 0
                             ? RoundedCornerShape(corners: [.topLeft, .bottomLeft], radius: 40)
                             : RoundedCornerShape(corners: [.topRight, .bottomRight], radius: 40)
-                    )  // 三項演算子で切り替え
+                    )
                     .onTapGesture {
                         self.selectedIndex = index
                     }

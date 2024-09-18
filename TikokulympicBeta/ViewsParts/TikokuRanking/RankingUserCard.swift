@@ -46,7 +46,6 @@ struct RankingUserCard: View {
                             .fontWeight(.bold)
                             .font(.system(size: 25))
                             .foregroundColor(.white)
-                        
                     case .third:
                         Image("BlackBomb")
                             .resizable()
@@ -60,17 +59,14 @@ struct RankingUserCard: View {
                             .font(.system(size: 25))
                             .foregroundColor(.white)
                     case .normal:
-                        
-                        Text("64th")
+                        Text("5th")
                             .padding(.top,28)
                             .padding(.leading,10)
+                            .padding(.trailing,20)
                             .fontWeight(.bold)
                             .font(.system(size: 25))
                             .foregroundColor(.white)
                     }
-                    
-                    
-                    
                 }
                 .padding(.leading,10)
                 Image("Icon")
@@ -95,12 +91,12 @@ struct RankingUserCard: View {
                     .font(.system(size: 20))
                     .padding(.top, 60)
                     .padding(.trailing, 30)
-                
             }
             
         }
     }
 }
+
 #Preview {
     RankingUserCard(rankState: .normal)
 }
