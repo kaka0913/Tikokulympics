@@ -59,7 +59,7 @@ struct RankingUserCard: View {
                             .font(.system(size: 25))
                             .foregroundColor(.white)
                     case .normal:
-                        Text("5th")
+                        Text("4th")
                             .padding(.top,28)
                             .padding(.leading,10)
                             .padding(.trailing,20)
