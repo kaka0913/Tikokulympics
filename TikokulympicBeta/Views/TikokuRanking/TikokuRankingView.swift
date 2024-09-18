@@ -34,9 +34,10 @@ struct TikokuRankingView: View {
             TextSegmentedControl()
 
             ScrollView {
-                RankingUserCard()
-                RankingUserCard()
-                RankingUserCard()
+                RankingUserCard(rankState: .first)
+                RankingUserCard(rankState: .secound)
+                RankingUserCard(rankState: .third)
+                RankingUserCard(rankState: .normal)
             }
             Spacer()
         }
