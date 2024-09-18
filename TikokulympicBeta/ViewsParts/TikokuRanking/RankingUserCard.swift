@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct RankingUserCard: View {
+    @State var name: String="名前"
+    @State var title: String="称号"
+    @State var distance: String="40"
+    
     var body: some View {
         ZStack(alignment: .leading){
             Rectangle()
@@ -34,18 +38,18 @@ struct RankingUserCard: View {
                     .padding(.top)
                     .padding(.leading,5)
                 VStack(alignment: .leading){
-                    Text("名前")
+                    Text(name)
                         .font(.headline)
                         .padding(.leading,5)
                         .padding(.bottom, 3)
                         .lineLimit(1)
-                    Text("称号")
+                    Text(title)
                         .font(.headline)
                         .padding(.leading,5)
                 }
                 .padding(.top)
                 Spacer()
-                Text("40km")
+                Text("\(distance)km")
                     .font(.system(size: 20))
                     .padding(.top, 60)
                     .padding(.trailing, 30)
