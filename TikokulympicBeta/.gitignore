@@ -66,9 +66,6 @@ playground.xcworkspace
 *.swp
 *~.nib
 
-## アセットカタログ
-*.xcassets
-
 ## OS固有のファイル
 .DS_Store
 *.DS_Store
