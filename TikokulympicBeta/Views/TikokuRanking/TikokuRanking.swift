@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 
 struct TikokuRankingView: View {
@@ -37,7 +35,7 @@ struct TextSegmentedControl: View {
     var body: some View {
         HStack(spacing: 0) {
             ForEach(0..<2) { index in
-                Text(index == 0 ? "到着者" : "ランキング")  // テキストに変更
+                Text(index == 0 ? "到着者" : "ランキング")
                     .font(index == 0 ? .system(size: 24) : .system(size: 24))
                     .fontWeight(.bold)
                     .frame(width: 115)
