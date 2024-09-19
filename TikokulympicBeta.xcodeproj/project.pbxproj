@@ -67,6 +67,7 @@
 		A556899C2C9B137200E60BC6 /* LocationInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556899B2C9B137200E60BC6 /* LocationInformation.swift */; };
 		A556899E2C9B141B00E60BC6 /* TikokuRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556899D2C9B141B00E60BC6 /* TikokuRanking.swift */; };
 		A55689A22C9B18C000E60BC6 /* MeetingTimeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55689A12C9B18C000E60BC6 /* MeetingTimeInformation.swift */; };
+		A5F60FA52C9BBC0E00C06780 /* LimitTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F60FA42C9BBC0E00C06780 /* LimitTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		A556899B2C9B137200E60BC6 /* LocationInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformation.swift; sourceTree = "<group>"; };
 		A556899D2C9B141B00E60BC6 /* TikokuRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikokuRanking.swift; sourceTree = "<group>"; };
 		A55689A12C9B18C000E60BC6 /* MeetingTimeInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimeInformation.swift; sourceTree = "<group>"; };
+		A5F60FA42C9BBC0E00C06780 /* LimitTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 				A55689972C9A84AC00E60BC6 /* RankingUserCard.swift */,
 				A556899B2C9B137200E60BC6 /* LocationInformation.swift */,
 				A55689A12C9B18C000E60BC6 /* MeetingTimeInformation.swift */,
+				A5F60FA42C9BBC0E00C06780 /* LimitTime.swift */,
 			);
 			path = TikokuRanking;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				22220BD32C970C7600DDB003 /* APIError.swift in Sources */,
 				22220BD52C97103300DDB003 /* APIClient.swift in Sources */,
 				22242E052C994AB1001BEB14 /* TikokuRankingService.swift in Sources */,
+				A5F60FA52C9BBC0E00C06780 /* LimitTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
