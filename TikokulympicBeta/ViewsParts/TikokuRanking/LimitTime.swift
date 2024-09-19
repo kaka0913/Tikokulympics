@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 import Combine
 
@@ -21,7 +19,7 @@ class LimitTimeViewModel: ObservableObject {
     }
 
     func culcLimitTime(meetingTime: Date, currentDate: Date) -> TimeInterval {
-        return max(meetingTime.timeIntervalSince(currentDate), 0)//meetingTime-currentDate，正の数になるようにmaxでくくる
+        return max(meetingTime.timeIntervalSince(currentDate), 0)
     }
 }
 struct LimitTime: View {
@@ -37,7 +35,7 @@ struct LimitTime: View {
                 .foregroundColor(.white)
         }
     }
-    func formattedTime(remainingTime: TimeInterval) -> String {//時間表示方法
+    func formattedTime(remainingTime: TimeInterval) -> String {
         let hours = Int(remainingTime) / 3600
         let minutes = (Int(remainingTime) % 3600) / 60
         let seconds = Int(remainingTime) % 60
