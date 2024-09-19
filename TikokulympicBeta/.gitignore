@@ -101,3 +101,11 @@ test-results.xcresult
 ## 設定ファイル
 Config.xcconfig
 GoogleService-Info.plist
+
+## 個別ファイル
+TikokulympicBeta/TikokulympicBeta.xcodeproj/project.xcworkspace/xcuserdata/
+TikokulympicBeta/TikokulympicBeta.xcodeproj/xcuserdata/
+TikokulympicBeta.xcodeproj/xcuserdata
+TikokulympicBeta.xcodeproj/project.xcworkspace/xcuserdata/kaka.xcuserdatad/UserInterfaceState.xcuserstate
+TikokulympicBeta.xcodeproj/project.xcworkspace/xcuserdata/mureyuta.xcuserdatad/UserInterfaceState.xcuserstate
+TikokulympicBeta.xcodeproj/xcuserdata/kaka.xcuserdatad/xcschemes
