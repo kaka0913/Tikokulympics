@@ -5,22 +5,17 @@ import SwiftUI
 struct TikokuRankingView: View {
     @State var timerHandler: Timer?
     @State private var selectedIndex: Int = 0
+    @StateObject private var viewModel = LimitTimeViewModel()
     var body: some View {
         VStack {
             ZStack {
                 Rectangle()
                     .frame(height: 328)
                     .foregroundColor(.darkred)
-                VStack {
-                    Text("残り時間")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .fontWeight(.semibold)
-                    Text("00:00:00")
-                        .font(.custom("", size: 100))
-                        .foregroundColor(.white)
-                   MeetingTimeInformation()
-                   LocationInformation()
+                VStack{
+                    LimitTime(limitTime: $viewModel.remainingTime)
+                    MeetingTimeInformation()
+                    LocationInformation()
                 }
             }
             .padding(.bottom)
