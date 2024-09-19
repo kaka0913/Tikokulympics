@@ -15,7 +15,7 @@ struct TikokuRankingView: View {
                         .foregroundColor(.white)
                         .fontWeight(.semibold)
                     Text("00:00:00")
-                        //                        .font(.custom("Jersey_25",size:100))//上手くいかない
+                    
                         .font(.custom("", size: 100))
                         .foregroundColor(.white)
                     Rectangle()
@@ -78,8 +78,4 @@ struct RoundedCornerShape: Shape {
             cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
     }
-}
-
-#Preview {
-    TikokuRankingView()
 }
