@@ -1,26 +1,19 @@
-
-
 import SwiftUI
 
 struct TikokuRankingView: View {
     @State var timerHandler: Timer?
     @State private var selectedIndex: Int = 0
+    @StateObject private var viewModel = LimitTimeViewModel()
     var body: some View {
         VStack {
             ZStack {
                 Rectangle()
                     .frame(height: 328)
                     .foregroundColor(.darkred)
-                VStack {
-                    Text("残り時間")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .fontWeight(.semibold)
-                    Text("00:00:00")
-                        .font(.custom("", size: 100))
-                        .foregroundColor(.white)
-                   MeetingTimeInformation()
-                   LocationInformation()
+                VStack{
+                    LimitTime(limitTime: $viewModel.remainingTime)
+                    MeetingTimeInformation()
+                    LocationInformation()
                 }
             }
             .padding(.bottom)
@@ -42,7 +35,7 @@ struct TextSegmentedControl: View {
     var body: some View {
         HStack(spacing: 0) {
             ForEach(0..<2) { index in
-                Text(index == 0 ? "到着者" : "ランキング")  // テキストに変更
+                Text(index == 0 ? "到着者" : "ランキング")
                     .font(index == 0 ? .system(size: 24) : .system(size: 24))
                     .fontWeight(.bold)
                     .frame(width: 115)
