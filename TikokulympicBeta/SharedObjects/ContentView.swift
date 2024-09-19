@@ -23,7 +23,7 @@ struct ContentView: View {
                     Text("掲示板")
                 }
 
-            TikokuRankingView()
+            AuthView()
                 .tabItem {
                     Image(systemName: "gear")
                     Text("プロフィール")
